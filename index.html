@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>My Family Book</title>
+    </head>
+    <body>
+        <h1>My Family Book</h1>
+        <img id="Img" src="Picture1.png" alt="">
+        <button onclick="Next()">Next</button>
+        <script>
+            var images = ["Picture1.png", "Picture2.png", "Picture3.png", "Picture4.png"];
+            var i = 0;            
+            function Next() {
+                document.getElementById("Img").src=images[i];
+                i++;
+                if (i == 4) {
+                    i = 0;
+                }
+            }           
+            
+        </script>
+    </body>
+</html>
